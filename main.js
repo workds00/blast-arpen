@@ -6,7 +6,7 @@ let alreadySentPhone = JSON.parse(localStorage.getItem('phone')) || [];
 
 async function fetchData() {
     try {
-        const response = await fetch('/blast-arpen/arpen.json');
+        const response = await fetch('https://workds00.github.io/blast-arpen/arpen.json');
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
