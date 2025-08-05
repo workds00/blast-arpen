@@ -83,7 +83,7 @@ function generateMessage(name, contract, unit) {
     return message
         .replaceAll('#name', titleCase(name))
         .replaceAll('#contract', contract)
-        .replaceAll('#unit', titleCase(unit));
+        //.replaceAll('#unit', titleCase(unit));
 }
 
 
@@ -113,5 +113,6 @@ window.addEventListener('click', (event) => {
         }
     }
 })
+
 
 
